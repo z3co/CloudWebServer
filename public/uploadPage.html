@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Download</title>
+</head>
+<body>
+    <h2>Upload a File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    
+
+    <hr>
+
+    <h2>Register new user or logout</h2>
+    <h4>Register new user</h4>
+    <a href="registerPage.html"><button type="button">Register</button></a>  
+         <h4>Logout</h4>
+    <a href="logout-page.html"><button type="button">logout</button></a>
+
+    <hr>
+
+    <h2>Download Files</h2>
+    <ul id="fileList">
+        <!-- File list will be dynamically generated here -->
+    </ul>
+
+    <script>
+        // Fetch file list from server
+        fetch('/files')
+            .then(response => response.json())
+            .then(files => {
+                const fileList = document.getElementById('fileList');
+                fileList.innerHTML = ''; // Clear existing list
+
+                files.forEach(file => {
+                    const listItem = document.createElement('li');
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = `/download/${file}`;
+                    downloadLink.textContent = file;
+                    listItem.appendChild(downloadLink);
+                    fileList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching file list:', error));
+    </script>
+</body>
+</html>
+
+
