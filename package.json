@@ -1,3 +1,4 @@
+{
 "name": "cloudwebserver",
 "version": "1.0.0",
 "main": "Server.js",
@@ -11,7 +12,7 @@
 "author": "Jeppe W J",
 "license": "UNLICENSED",
 "description": "",
-{
+
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
