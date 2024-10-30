@@ -17,7 +17,7 @@ To access your new cloud, open your browser and go to localhost:3000.
 Now press the login button and type in admin and admin in the username and password fields.
 
 Then you should see a register button, press that and make a new user, from now on use this login to access your cloud.
-Go back to the page you where on before and simply press the choose file button, choose your file. Then press the upload button,
+Go back to the page you where on before and simply press the choose file button, now choose your file. Then press the upload button,
 after a refresh youy should see the name of your file popup at the bottom of the page. To install it press it.
 
 Now you are all good to go everybody with a password can see and download the files so keep your password secret.
