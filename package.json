@@ -1,6 +1,16 @@
+"name": "cloudwebserver",
+"version": "1.0.0",
+"main": "Server.js",
 "scripts": {
-  "test": "echo 'no tests here'",
+  "test": "echo 'no tests here'"
 },
+"repository": {
+  "type": "git",
+  "url": ".git"
+},
+"author": "Jeppe W J",
+"license": "UNLICENSED",
+"description": "",
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
