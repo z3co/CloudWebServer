@@ -1,3 +1,6 @@
+"scripts": {
+  "test": "echo 'no tests here'",
+},
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
